@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimonSaysSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,74 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cca-AR-UgY">
+                                <rect key="frame" x="245" y="120" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="ZKj-Lg-SHX"/>
+                                    <constraint firstAttribute="width" constant="110" id="ibv-0w-YgW"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qet-5x-gKU">
+                                <rect key="frame" x="449" y="245" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="YIy-B8-CXG"/>
+                                    <constraint firstAttribute="width" constant="110" id="xLt-9H-AdB"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hln-eS-UKG">
+                                <rect key="frame" x="245" y="380" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Aog-Op-W0l"/>
+                                    <constraint firstAttribute="width" constant="110" id="qyW-fe-o7Z"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bq-n5-5dM">
+                                <rect key="frame" x="41" y="245" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="aHh-sg-Swu"/>
+                                    <constraint firstAttribute="width" constant="110" id="nR0-Wn-nmd"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Qet-5x-gKU" secondAttribute="centerY" id="FEr-Ec-OEn"/>
+                            <constraint firstItem="cca-AR-UgY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="VZJ-f8-jnw">
+                                <variation key="heightClass=compact" constant="25"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qet-5x-gKU" secondAttribute="trailing" constant="25" id="WTK-IA-HBS">
+                                <variation key="heightClass=compact" constant="75"/>
+                            </constraint>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hln-eS-UKG" secondAttribute="bottom" constant="110" id="mCn-yl-Od3">
+                                <variation key="heightClass=compact" constant="25"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="hln-eS-UKG" secondAttribute="centerX" id="o1i-ba-jMZ"/>
+                            <constraint firstAttribute="centerX" secondItem="cca-AR-UgY" secondAttribute="centerX" id="pB3-yc-UpG"/>
+                            <constraint firstItem="7bq-n5-5dM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="tqQ-oW-L80">
+                                <variation key="heightClass=compact" constant="75"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="7bq-n5-5dM" secondAttribute="centerY" id="zyY-hJ-0vB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueButton" destination="cca-AR-UgY" id="82I-hL-JrX"/>
+                        <outlet property="greenButton" destination="Qet-5x-gKU" id="LJo-eJ-KtZ"/>
+                        <outlet property="orangeButton" destination="7bq-n5-5dM" id="Sfo-4j-5Lw"/>
+                        <outlet property="redButton" destination="hln-eS-UKG" id="F05-GU-0uj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
