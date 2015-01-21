@@ -57,10 +57,20 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYK-er-Rna">
+                                <rect key="frame" x="261" y="285" width="79" height="30"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEc-7I-bzn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="Qet-5x-gKU" secondAttribute="centerY" id="FEr-Ec-OEn"/>
+                            <constraint firstAttribute="centerY" secondItem="KYK-er-Rna" secondAttribute="centerY" id="NVe-9n-nJa"/>
                             <constraint firstItem="cca-AR-UgY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="VZJ-f8-jnw">
                                 <variation key="heightClass=compact" constant="25"/>
                             </constraint>
@@ -72,6 +82,7 @@
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="hln-eS-UKG" secondAttribute="centerX" id="o1i-ba-jMZ"/>
                             <constraint firstAttribute="centerX" secondItem="cca-AR-UgY" secondAttribute="centerX" id="pB3-yc-UpG"/>
+                            <constraint firstAttribute="centerX" secondItem="KYK-er-Rna" secondAttribute="centerX" constant="-0.5" id="rBU-hw-ltA"/>
                             <constraint firstItem="7bq-n5-5dM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="tqQ-oW-L80">
                                 <variation key="heightClass=compact" constant="75"/>
                             </constraint>
@@ -83,6 +94,7 @@
                         <outlet property="greenButton" destination="Qet-5x-gKU" id="LJo-eJ-KtZ"/>
                         <outlet property="orangeButton" destination="7bq-n5-5dM" id="Sfo-4j-5Lw"/>
                         <outlet property="redButton" destination="hln-eS-UKG" id="F05-GU-0uj"/>
+                        <outlet property="startGameButton" destination="KYK-er-Rna" id="GuU-sD-qfT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

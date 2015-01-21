@@ -11,9 +11,12 @@ import Foundation
 class GameModel {
     var buttonCombination: Array<Int> = []
     var round = 1
-    init() {
+     init() {
         self.buttonCombination = []
+        //super.init()
     }
+    
+    
     
     func startRound() -> [Int] {
         buttonCombination.removeAll(keepCapacity: false)
@@ -24,5 +27,11 @@ class GameModel {
         round += 1
         return buttonCombination
     }
+    
+//    required init(coder aDecoder: NSCoder) {
+//
+//        //fatalError("init(coder:) has not been implemented")
+//    }
+    
 }
 

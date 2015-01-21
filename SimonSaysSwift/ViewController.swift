@@ -9,12 +9,45 @@
 import UIKit
 
 class ViewController: UIViewController {
+
+    
+
+
     @IBOutlet weak var blueButton: UIButton!
     @IBOutlet weak var greenButton: UIButton!
     @IBOutlet weak var orangeButton: UIButton!
     @IBOutlet weak var redButton: UIButton!
+    @IBOutlet weak var startGameButton: UIButton!
+    var gameModel: GameModel
     
+    @IBAction func startGameButtonPressed(sender: AnyObject) {
+        showButtonCombination()
+    }
     
+    init(gameModel: GameModel) {
+        self.gameModel = gameModel
+        super.init()
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        
+        if let aGameModel: AnyObject = aDecoder.decodeObjectForKey("gameModel")
+        {
+            gameModel = aGameModel as GameModel
+        }
+        else
+        {
+            gameModel = GameModel()
+        }
+        
+        super.init(coder:aDecoder);
+    }
+
+
+    override func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(gameModel, forKey: "gameModel");
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         blueButton.backgroundColor = UIColor.blueColor()
@@ -33,6 +66,27 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func showButtonCombination() {
+        var buttonCombination = [1,2]
+        for buttonTag in buttonCombination {
+            switch buttonTag {
+            case 1:
+                println("button 1 should highlight")
+            case 2:
+                println("button 1 should highlight")
+
+            case 3:
+                println("button 1 should highlight")
+
+            case 4:
+                println("button 1 should highlight")
+
+            default:
+                println("Do nothing")
+            }
+        }
     }
 
 
