@@ -13,6 +13,7 @@
 		271F3B8D1A7016F6008BB370 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271F3B8C1A7016F6008BB370 /* Images.xcassets */; };
 		271F3B901A7016F6008BB370 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271F3B8E1A7016F6008BB370 /* LaunchScreen.xib */; };
 		271F3B9C1A7016F6008BB370 /* SimonSaysSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F3B9B1A7016F6008BB370 /* SimonSaysSwiftTests.swift */; };
+		271F3BA61A7030A7008BB370 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F3BA51A7030A7008BB370 /* GameModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		271F3B951A7016F6008BB370 /* SimonSaysSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimonSaysSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		271F3B9A1A7016F6008BB370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		271F3B9B1A7016F6008BB370 /* SimonSaysSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonSaysSwiftTests.swift; sourceTree = "<group>"; };
+		271F3BA51A7030A7008BB370 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		271F3BA71A703369008BB370 /* ScratchPad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ScratchPad.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				271F3B851A7016F6008BB370 /* AppDelegate.swift */,
 				271F3B871A7016F6008BB370 /* ViewController.swift */,
 				271F3B891A7016F6008BB370 /* Main.storyboard */,
+				271F3BA51A7030A7008BB370 /* GameModel.swift */,
+				271F3BA71A703369008BB370 /* ScratchPad.playground */,
 				271F3B8C1A7016F6008BB370 /* Images.xcassets */,
 				271F3B8E1A7016F6008BB370 /* LaunchScreen.xib */,
 				271F3B831A7016F6008BB370 /* Supporting Files */,
@@ -214,6 +219,7 @@
 			files = (
 				271F3B881A7016F6008BB370 /* ViewController.swift in Sources */,
 				271F3B861A7016F6008BB370 /* AppDelegate.swift in Sources */,
+				271F3BA61A7030A7008BB370 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

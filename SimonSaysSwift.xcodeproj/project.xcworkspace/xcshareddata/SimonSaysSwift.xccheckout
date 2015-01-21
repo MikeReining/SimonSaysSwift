@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>23A84752-3653-4377-8ABB-F31DC67E6E8B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SimonSaysSwift</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>13553BD6827E43E506FCB0DF9530B1445243D29D</key>
+		<string>https://github.com/MikeReining/SimonSaysSwift.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SimonSaysSwift.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>13553BD6827E43E506FCB0DF9530B1445243D29D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MikeReining/SimonSaysSwift.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>13553BD6827E43E506FCB0DF9530B1445243D29D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>13553BD6827E43E506FCB0DF9530B1445243D29D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SimonSaysSwift</string>
+		</dict>
+	</array>
+</dict>
+</plist>
