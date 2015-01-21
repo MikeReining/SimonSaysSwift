@@ -18,38 +18,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var orangeButton: UIButton!
     @IBOutlet weak var redButton: UIButton!
     @IBOutlet weak var startGameButton: UIButton!
-    var gameModel: GameModel
+    var gameModel: GameModel?
     
     @IBAction func startGameButtonPressed(sender: AnyObject) {
         showButtonCombination()
     }
-    
-    init(gameModel: GameModel) {
-        self.gameModel = gameModel
-        super.init()
-    }
-
-    required init(coder aDecoder: NSCoder) {
-        
-        if let aGameModel: AnyObject = aDecoder.decodeObjectForKey("gameModel")
-        {
-            gameModel = aGameModel as GameModel
-        }
-        else
-        {
-            gameModel = GameModel()
-        }
-        
-        super.init(coder:aDecoder);
-    }
-
-
-    override func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(gameModel, forKey: "gameModel");
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        gameModel?.startRound()
         blueButton.backgroundColor = UIColor.blueColor()
         blueButton.alpha = 0.5
         greenButton.backgroundColor = UIColor.greenColor()
