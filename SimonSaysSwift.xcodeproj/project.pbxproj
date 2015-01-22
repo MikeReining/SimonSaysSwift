@@ -14,6 +14,7 @@
 		271F3B901A7016F6008BB370 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271F3B8E1A7016F6008BB370 /* LaunchScreen.xib */; };
 		271F3B9C1A7016F6008BB370 /* SimonSaysSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F3B9B1A7016F6008BB370 /* SimonSaysSwiftTests.swift */; };
 		271F3BA61A7030A7008BB370 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F3BA51A7030A7008BB370 /* GameModel.swift */; };
+		27A539C71A70564D005CF397 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A539C61A70564D005CF397 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		271F3B9B1A7016F6008BB370 /* SimonSaysSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonSaysSwiftTests.swift; sourceTree = "<group>"; };
 		271F3BA51A7030A7008BB370 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		271F3BA71A703369008BB370 /* ScratchPad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ScratchPad.playground; sourceTree = "<group>"; };
+		27A539C61A70564D005CF397 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A539C71A70564D005CF397 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 		271F3B771A7016F6008BB370 = {
 			isa = PBXGroup;
 			children = (
+				27A539C61A70564D005CF397 /* QuartzCore.framework */,
 				271F3B821A7016F6008BB370 /* SimonSaysSwift */,
 				271F3B981A7016F6008BB370 /* SimonSaysSwiftTests */,
 				271F3B811A7016F6008BB370 /* Products */,
@@ -413,6 +417,7 @@
 				271F3BA11A7016F6008BB370 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		271F3BA21A7016F6008BB370 /* Build configuration list for PBXNativeTarget "SimonSaysSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				271F3BA41A7016F6008BB370 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

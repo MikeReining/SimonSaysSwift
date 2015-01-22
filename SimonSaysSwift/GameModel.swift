@@ -10,15 +10,17 @@ import Foundation
 
 class GameModel {
     var buttonCombination: Array<Int> = []
+    var buttonsPressed: Array<Int> = []
     var round = 1
      init() {
         self.buttonCombination = []
+        self.buttonsPressed = []
         //super.init()
     }
     
     
     
-    func startRound() -> [Int] {
+    func nextRound() -> [Int] {
         buttonCombination.removeAll(keepCapacity: false)
         for i in 1...round {
             var nextButtonTag = Int(arc4random_uniform(UInt32(4))) + 1
@@ -27,11 +29,6 @@ class GameModel {
         round += 1
         return buttonCombination
     }
-    
-//    required init(coder aDecoder: NSCoder) {
-//
-//        //fatalError("init(coder:) has not been implemented")
-//    }
     
 }
 
